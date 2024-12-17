@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign Case - Supervisor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Assign Case</h2>
+        <form>
+            <div class="mb-3">
+                <label for="caseId" class="form-label">Case ID</label>
+                <input type="text" class="form-control" id="caseId" required>
+            </div>
+            <div class="mb-3">
+                <label for="investigator" class="form-label">Assign Investigator</label>
+                <select class="form-select" id="investigator" required>
+                    <option>Select Investigator</option>
+                    <option value="john">John Doe</option>
+                    <option value="jane">Jane Smith</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="deadline" class="form-label">Deadline</label>
+                <input type="date" class="form-control" id="deadline" required>
+            </div>
+            <div class="mb-3">
+                <label for="details" class="form-label">Case Details</label>
+                <textarea class="form-control" id="details" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Assign Case</button>
+        </form>
+    </div>
+</body>
+</html>
